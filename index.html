@@ -97,6 +97,10 @@
   .essay .close { font-size: 19px; color: var(--ink); font-weight: 500; border-left: 2px solid var(--accent); padding-left: 18px; margin-top: 26px; }
   .essay .src { font-size: 13px; color: var(--faint); margin-top: 24px; }
   .essay .src a { color: var(--muted); }
+  .essay .tree { font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 12.5px; line-height: 1.7; background: #14201A; color: #cdd6cf; border-radius: 10px; padding: 20px 22px; overflow-x: auto; margin: 8px 0 10px; }
+  .essay .tree b { color: #F5F3EE; font-weight: 600; }
+  .essay .tree .g { color: #2FBF71; }
+  .essay .treecap { font-size: 13.5px; color: var(--faint); margin: 0 0 22px; }
 
   footer { padding: 56px 0 90px; }
   footer .f-name { font-weight: 650; color: var(--ink); }
@@ -136,7 +140,7 @@
 
       <div class="build">
         <div class="b-top"><span class="b-title">QuestForge</span><span class="b-dots"></span><span class="b-stack">PERSONAL · REACT · TS</span></div>
-        <p class="b-desc">A learning game I built for my 10-year-old son, who has ADHD. Daily quests earn collectible creatures he levels up and evolves. Every activity maps to a finding in his SEN assessment, and it rewards having a go, never speed or being right. iPad-first, local-first, fully tested. <a class="b-link" href="https://github.com/passqlabs/questforge">view repo →</a></p>
+        <p class="b-desc">A learning game I built for my 10-year-old son, who has ADHD. Daily quests earn collectible creatures he levels up and evolves. Every activity maps to a finding in his SEN assessment, and it rewards having a go, never speed or being right. iPad-first, local-first, and built with an independent review gate that caught a real bug: a creature silently devolving after a data migration. <a class="b-link" href="https://github.com/passqlabs/questforge">view repo →</a></p>
       </div>
 
       <div class="build">
@@ -160,14 +164,14 @@
   <section id="work">
     <div class="wrap">
       <p class="lab">directed with AI</p>
-      <p class="intro">I can't design and I can't code. What I can do is tell what good looks like, and direct AI until it gets there. <b>Both of these were built that way.</b></p>
+      <p class="intro">I'm not a traditional designer or engineer. What I do is take an ambiguous problem from idea to working artefact myself: the product shape, the UX calls, the implementation, the testing, the handover. AI is the leverage; the judgement is mine. <b>Both of these were built that way.</b></p>
 
       <figure>
         <div class="shot">
           <div class="bar"><i></i><i></i><i></i><span class="u">passq.io</span></div>
           <img src="img/passq-site.png" alt="The PassQ marketing site: 'Stop chasing references. Start placing candidates.'">
         </div>
-        <figcaption><b>passq.io</b>. The product and the marketing site. Every screen and every line of copy, directed by me and built with AI. I made the calls on layout, message and tone; the AI did the design and the code.</figcaption>
+        <figcaption><b>passq.io</b>. The product and the marketing site. I wrote the brief, set the product logic, judged the UX, iterated the build and shipped it. The calls on layout, message and tone were mine; AI was the leverage that made them real.</figcaption>
       </figure>
 
       <figure>
@@ -182,7 +186,7 @@
             </div>
           </div>
         </div>
-        <figcaption><b>The PassQ rebrand.</b> The idea was the brief: <span class="go">green means go</span>, and it only appears when a candidate is actually cleared. Every reference is an open circle; the green dot is the answer arriving. AI drew the marks and built the kit. Knowing that idea was the right one, and steering toward it, was the job.</figcaption>
+        <figcaption><b>The PassQ rebrand.</b> I set the idea: <span class="go">green means go</span>, and it only appears when a candidate is actually cleared. Every reference is an open circle; the green dot is the answer arriving. I directed the marks and the kit to that idea and judged every round. The thinking was the work.</figcaption>
       </figure>
     </div>
   </section>
@@ -193,23 +197,36 @@
       <h2>AI in business has two stages. Most people are stuck on the first.</h2>
       <p class="standfirst">How I think AI actually changes a company, and why mine runs on a folder of text files.</p>
 
-      <p>AI lands in a business in two stages, and they are not the same size. <span class="stage">Stage one</span> is adopting AI into the way you already work: faster drafts, quicker research, a copilot inside the tools you already have. <span class="stage">Stage two</span> is rebuilding the work itself around what AI has just made cheap. Almost everyone is busy with stage one. The real change is stage two, and hardly anyone has started.</p>
+      <p>AI lands in a business in two stages, and they are not the same size. <span class="stage">Stage one</span> is adopting AI into the way you already work: faster drafts, quicker research, a copilot inside the tools you already have. <span class="stage">Stage two</span> is rebuilding the work itself around what AI has just made cheap. Almost everyone is parked in stage one. The work that interests me is stage two.</p>
 
-      <p>Stage one is worth doing, but it has a ceiling. Jake Van Clief puts the limit well: AI can't fix a broken process. If your sales process closes 5% of leads, automating it doesn't get you to 20%, it gets you a 5% close rate with less typing. So stage one done properly isn't "add AI". It's map the workflow, cut the friction, then add AI to what's left. Most "AI transformation" stops at the less-typing version and calls it a day.</p>
+      <p>Stage one is worth doing, but it has a ceiling. AI can't fix a broken process. If your sales process closes 5% of leads, automating it doesn't get you to 20%, it gets you a 5% close rate with less typing. Done properly, stage one isn't "add AI", it's fix the workflow first, then add AI to what's left. Most "AI transformation" stops at the less-typing version and calls it a day.</p>
 
-      <p>Stage two asks a different question. Not "where can AI help the way we work now?" but "what would we build if we assumed a team of capable agents was basically free?" Answer that honestly and you don't get your old company with AI bolted on. You get a different shape of company: smaller, flatter, organised around judgement instead of headcount.</p>
+      <p>Stage two asks a different question. Not "where can AI help the way we work now?" but "what would we build if a team of capable agents was basically free?" The moment it clicked for me wasn't "AI can write faster." It was "AI changes what's worth building in the first place."</p>
 
-      <p>My own company is a small example of stage two. It runs on a folder of markdown files. The agents that do the work read and write plain text, and that one boring choice is most of the architecture. Three things fall out of it: it's AI-agnostic, because any model can read a folder and I'm not locked to one vendor's framework; it's legible, because anyone can open a file and read the real state of the business in plain English; and the human stays in the loop by default, because every output is a file I sign off before it goes anywhere, with version control as the audit trail.</p>
+      <p>At PassQ I stopped asking where AI could slot into our existing operating model and started rebuilding the model around agents, review gates and plain-text state. The result isn't a chatbot bolted on the side. It's the working surface the company runs from, and it's a folder of markdown files. The agents read and write plain text; every output is a file I sign off before it ships; version control is the audit trail. Three things follow from that one boring choice: any model can read a folder, so I'm not locked to a vendor; anyone can open a file and read the real state of the business in plain English; and the human stays in the loop by default.</p>
 
-      <p>The idea that flipped this for me was Van Clief's Interpretable Context Methodology: folders over agents, plain filesystem structure instead of orchestration frameworks. I didn't bolt AI onto an ops tool I already had. I built the ops layer around what agents are genuinely good at. That's the difference between the two stages in one decision.</p>
+      <pre class="tree" aria-label="Founder OS folder structure">founder-os/
+├─ <b>STATUS.md</b>            live state, read at the start of every session
+├─ _strategy/           the thesis, the milestones, the bets
+├─ team/                the agent roster
+├─ pipelines/
+│  ├─ sales/            prospect → outreach → proposal
+│  ├─ marketing/        SEO · social · email
+│  ├─ investment/       the raise
+│  └─ product/          spec → build → review
+├─ owners-inbox/        agent output, waiting on my sign-off
+└─ _integrations/       <span class="g">MCP</span>: Gmail · Calendar · Drive · CRM</pre>
+      <p class="treecap">Founder OS, top level. No app, no database. The company's state is a folder you can open and read.</p>
 
-      <p>Now the part people skip past. I can't design and I can't code. What I can do is tell what good looks like, and get it built. I've spent twenty years next to brilliant designers and engineers, doing presales for social media technology and building teams around tools that didn't exist the year before. That taught me the thing that matters most in stage two: knowing what's worth building, and what "good" means for the person who has to use it. AI will build almost anything you can describe. Describing the right thing, and recognising when it's right, is the scarce skill now. Humans and technology are converging on the same work, and the effort shifts from making the thing to deciding what the thing should be.</p>
+      <p>I didn't invent this shape. Jake Van Clief's Interpretable Context Methodology makes the case for folders over orchestration frameworks, and it's where the idea clicked for me. What I did was bet a real company on it, in production, and watch it hold.</p>
 
-      <p>I'm not theorising from a whiteboard. I've built and run businesses, and I know technology only counts if it does something real on a Tuesday morning. The two-stage view isn't a framework for a slide. It's how I decide what to build next.</p>
+      <p>The part people skip: I'm not a designer or an engineer by training. What I bring is twenty years next to brilliant ones, doing presales for social technology and building teams around tools that didn't exist the year before. That's where you learn what matters most in stage two, which is knowing what's worth building and what "good" means for the person who has to use it. AI will build almost anything you can describe. Describing the right thing, and knowing it when you see it, is the work now.</p>
+
+      <p>I'm not theorising from a whiteboard. I've built and run businesses, and technology only counts if it does something real on a Tuesday morning. The two-stage view isn't a slide. It's how I decide what to build next.</p>
 
       <p class="close">Stage one makes you faster. Stage two makes you a different company. I'd rather build the different company.</p>
 
-      <p class="src">Influenced by Jake Van Clief's work on the Interpretable Context Methodology: <a href="https://www.youtube.com/watch?v=MkN-ss2Nl10&t=776s">"Stop Building AI Agents. Use This Folder System Instead"</a>. The video changed how I thought about working with AI.</p>
+      <p class="src">Source: Jake Van Clief, <a href="https://www.youtube.com/watch?v=MkN-ss2Nl10&t=776s">"Stop Building AI Agents. Use This Folder System Instead"</a>. The video that changed how I thought about working with AI.</p>
     </div>
   </section>
 
