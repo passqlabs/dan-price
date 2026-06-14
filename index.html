@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dan Price — AI builder</title>
-<meta name="description" content="Dan Price — AI builder and founder. I ship working tools, not slides about them.">
+<title>Dan Price · AI builder</title>
+<meta name="description" content="Dan Price, AI builder and founder. I ship working tools, not slides about them.">
 <style>
   :root {
     --ink: #15171c;
@@ -15,6 +15,8 @@
     --hair: #ececef;
     --rule: #e2e3e7;
     --bg: #fbfbfc;
+    --pine: #0E3B2E;
+    --go: #2FBF71;
   }
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; }
@@ -59,13 +61,42 @@
   .b-desc { margin: 6px 0 0; color: var(--muted); font-size: 15.5px; }
   .b-link { font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 12px; }
 
+  /* visual work */
+  .intro { font-size: 17px; color: var(--body); margin: -6px 0 30px; max-width: 620px; }
+  .intro b { color: var(--ink); font-weight: 600; }
+  figure { margin: 0 0 38px; }
+  figure:last-child { margin-bottom: 0; }
+  .shot { border: 1px solid var(--rule); border-radius: 10px; overflow: hidden; box-shadow: 0 14px 44px rgba(20,32,26,0.10); }
+  .shot .bar { background: #f1f2f4; border-bottom: 1px solid var(--rule); padding: 9px 13px; display: flex; align-items: center; gap: 7px; }
+  .shot .bar i { width: 10px; height: 10px; border-radius: 50%; background: #d4d6da; display: inline-block; }
+  .shot .bar .u { font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 11px; color: var(--muted); margin-left: 10px; }
+  .shot img { display: block; width: 100%; }
+  figcaption { font-size: 14.5px; color: var(--muted); margin-top: 14px; line-height: 1.55; }
+  figcaption b { color: var(--ink); font-weight: 600; }
+
+  /* brand panel */
+  .brand { background: #F5F3EE; border: 1px solid #E4E0D6; border-radius: 12px; padding: 36px 34px 32px; color: var(--ink); }
+  .brand .ba { display: flex; align-items: center; gap: 22px; flex-wrap: wrap; }
+  .brand .col { display: flex; flex-direction: column; gap: 7px; }
+  .brand .cap { font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 10.5px; letter-spacing: 0.05em; color: #8a8578; text-transform: uppercase; }
+  .brand .old { height: 24px; opacity: 0.5; }
+  .brand .new { height: 40px; }
+  .brand .arrow { color: var(--go); font-family: ui-monospace, Menlo, monospace; font-size: 20px; }
+  .brand .marks { display: flex; align-items: center; gap: 18px; margin-left: auto; }
+  .brand .marks img { height: 52px; }
+  .brand .marks .ring { height: 44px; }
+  .brand-note { font-size: 14.5px; color: var(--muted); margin-top: 14px; }
+  .brand-note b { color: var(--ink); font-weight: 600; }
+  .brand-note .go { color: #127D47; font-weight: 600; }
+
   /* essay */
   .essay h2 { font-size: 28px; font-weight: 740; letter-spacing: -0.02em; color: var(--ink); margin: 0 0 8px; line-height: 1.2; }
   .essay .standfirst { color: var(--muted); font-size: 16px; margin: 0 0 28px; }
   .essay p { margin: 0 0 18px; }
-  .essay h3 { font-size: 18px; color: var(--ink); margin: 28px 0 6px; }
-  .essay .kicker { font-family: ui-monospace, "SF Mono", Menlo, monospace; color: var(--accent); font-size: 14px; }
-  .essay .close { font-size: 19px; color: var(--ink); font-weight: 500; border-left: 2px solid var(--accent); padding-left: 18px; margin-top: 28px; }
+  .essay .stage { font-family: ui-monospace, "SF Mono", Menlo, monospace; color: var(--accent); font-weight: 700; }
+  .essay .close { font-size: 19px; color: var(--ink); font-weight: 500; border-left: 2px solid var(--accent); padding-left: 18px; margin-top: 26px; }
+  .essay .src { font-size: 13px; color: var(--faint); margin-top: 24px; }
+  .essay .src a { color: var(--muted); }
 
   footer { padding: 56px 0 90px; }
   footer .f-name { font-weight: 650; color: var(--ink); }
@@ -78,6 +109,7 @@
     header { padding: 64px 0 48px; }
     .b-dots { display: none; }
     .b-top { flex-wrap: wrap; gap: 2px 10px; }
+    .brand .marks { margin-left: 0; margin-top: 18px; }
   }
 </style>
 </head>
@@ -92,6 +124,7 @@
         <a href="mailto:dan@dan-price.co.uk">dan@dan-price.co.uk</a>
         <a href="https://www.linkedin.com/in/itsdanprice">linkedin.com/in/itsdanprice</a>
         <a href="#builds">builds ↓</a>
+        <a href="#work">work ↓</a>
         <a href="#thinking">how i think ↓</a>
       </div>
     </div>
@@ -118,32 +151,65 @@
 
       <div class="build">
         <div class="b-top"><span class="b-title">Coco</span><span class="b-dots"></span><span class="b-stack">AGENTIC PRODUCT</span></div>
-        <p class="b-desc">An AI coworker that knows UK education safeguarding and compliance cold, built as both a product and a working member of the team. Domain-expert AI sitting inside a regulated workflow.</p>
+        <p class="b-desc">An AI co-worker that knows UK education safeguarding and compliance cold, built as both a product and a working member of the team. Domain-expert AI sitting inside a regulated workflow.</p>
       </div>
 
+    </div>
+  </section>
+
+  <section id="work">
+    <div class="wrap">
+      <p class="lab">directed with AI</p>
+      <p class="intro">I can't design and I can't code. What I can do is tell what good looks like, and direct AI until it gets there. <b>Both of these were built that way.</b></p>
+
+      <figure>
+        <div class="shot">
+          <div class="bar"><i></i><i></i><i></i><span class="u">passq.io</span></div>
+          <img src="img/passq-site.png" alt="The PassQ marketing site: 'Stop chasing references. Start placing candidates.'">
+        </div>
+        <figcaption><b>passq.io</b>. The product and the marketing site. Every screen and every line of copy, directed by me and built with AI. I made the calls on layout, message and tone; the AI did the design and the code.</figcaption>
+      </figure>
+
+      <figure>
+        <div class="brand">
+          <div class="ba">
+            <div class="col"><span class="cap">v1 · 2024</span><img class="old" src="img/legacy-wordmark.png" alt="Old PassQ wordmark"></div>
+            <span class="arrow">→</span>
+            <div class="col"><span class="cap">v2 · Greenlight</span><img class="new" src="img/greenlight-wordmark.png" alt="New PassQ Greenlight wordmark with green dot"></div>
+            <div class="marks">
+              <img src="img/greenlight-tile.png" alt="PassQ tile mark">
+              <img class="ring" src="img/greenlight-ring.svg" alt="PassQ ring mark">
+            </div>
+          </div>
+        </div>
+        <figcaption><b>The PassQ rebrand.</b> The idea was the brief: <span class="go">green means go</span>, and it only appears when a candidate is actually cleared. Every reference is an open circle; the green dot is the answer arriving. AI drew the marks and built the kit. Knowing that idea was the right one, and steering toward it, was the job.</figcaption>
+      </figure>
     </div>
   </section>
 
   <section id="thinking" class="essay">
     <div class="wrap">
       <p class="lab">how i think</p>
-      <h2>Why my company runs on a folder of text files</h2>
-      <p class="standfirst">The most useful AI decision I made was also the least technical one.</p>
+      <h2>AI in business has two stages. Most people are stuck on the first.</h2>
+      <p class="standfirst">How I think AI actually changes a company, and why mine runs on a folder of text files.</p>
 
-      <p>Everyone building with AI right now reaches for a platform. A framework, an orchestration layer, a vector database, a bespoke app with the model wired into the middle. I went the other way.</p>
+      <p>AI lands in a business in two stages, and they are not the same size. <span class="stage">Stage one</span> is adopting AI into the way you already work: faster drafts, quicker research, a copilot inside the tools you already have. <span class="stage">Stage two</span> is rebuilding the work itself around what AI has just made cheap. Almost everyone is busy with stage one. The real change is stage two, and hardly anyone has started.</p>
 
-      <p>The company I founded runs on a folder of markdown files. The agents that do the work read and write plain text. That is most of the architecture, and it was a deliberate choice, not a shortcut. Three things fall out of it.</p>
+      <p>Stage one is worth doing, but it has a ceiling. Jake Van Clief puts the limit well: AI can't fix a broken process. If your sales process closes 5% of leads, automating it doesn't get you to 20%, it gets you a 5% close rate with less typing. So stage one done properly isn't "add AI". It's map the workflow, cut the friction, then add AI to what's left. Most "AI transformation" stops at the less-typing version and calls it a day.</p>
 
-      <h3><span class="kicker">01</span> &nbsp;It's AI-agnostic</h3>
-      <p>A file system is the one interface every model already understands. Whatever is best this month reads a folder; whatever is best next month will too. I am not betting the company on one vendor's framework, and the day a better model lands I can swap it in without rebuilding anything.</p>
+      <p>Stage two asks a different question. Not "where can AI help the way we work now?" but "what would we build if we assumed a team of capable agents was basically free?" Answer that honestly and you don't get your old company with AI bolted on. You get a different shape of company: smaller, flatter, organised around judgement instead of headcount.</p>
 
-      <h3><span class="kicker">02</span> &nbsp;It's legible</h3>
-      <p>There is no database to query and no orchestration engine to reverse-engineer. Anyone can open a file, read the actual state of the business in plain English, change a line, and the next agent picks up the change. The system explains itself.</p>
+      <p>My own company is a small example of stage two. It runs on a folder of markdown files. The agents that do the work read and write plain text, and that one boring choice is most of the architecture. Three things fall out of it: it's AI-agnostic, because any model can read a folder and I'm not locked to one vendor's framework; it's legible, because anyone can open a file and read the real state of the business in plain English; and the human stays in the loop by default, because every output is a file I sign off before it goes anywhere, with version control as the audit trail.</p>
 
-      <h3><span class="kicker">03</span> &nbsp;The human stays in the loop by default</h3>
-      <p>Every output is a file I can open and edit before it goes anywhere near a customer. Version control is the audit trail. Nothing happens in a black box.</p>
+      <p>The idea that flipped this for me was Van Clief's Interpretable Context Methodology: folders over agents, plain filesystem structure instead of orchestration frameworks. I didn't bolt AI onto an ops tool I already had. I built the ops layer around what agents are genuinely good at. That's the difference between the two stages in one decision.</p>
 
-      <p class="close">The lowest-tech option turned out to be the most powerful one. Plain files are the only ground humans and AI agents already share, and building on that beats wrapping a clever cage around the model. Simple turned out to scale better than clever.</p>
+      <p>Now the part people skip past. I can't design and I can't code. What I can do is tell what good looks like, and get it built. I've spent twenty years next to brilliant designers and engineers, doing presales for social media technology and building teams around tools that didn't exist the year before. That taught me the thing that matters most in stage two: knowing what's worth building, and what "good" means for the person who has to use it. AI will build almost anything you can describe. Describing the right thing, and recognising when it's right, is the scarce skill now. Humans and technology are converging on the same work, and the effort shifts from making the thing to deciding what the thing should be.</p>
+
+      <p>I'm not theorising from a whiteboard. I've built and run businesses, and I know technology only counts if it does something real on a Tuesday morning. The two-stage view isn't a framework for a slide. It's how I decide what to build next.</p>
+
+      <p class="close">Stage one makes you faster. Stage two makes you a different company. I'd rather build the different company.</p>
+
+      <p class="src">Influenced by Jake Van Clief's work on the Interpretable Context Methodology: <a href="https://www.youtube.com/watch?v=MkN-ss2Nl10&t=776s">"Stop Building AI Agents. Use This Folder System Instead"</a>. The video changed how I thought about working with AI.</p>
     </div>
   </section>
 
@@ -154,6 +220,7 @@
       <div class="footlinks">
         <a href="mailto:dan@dan-price.co.uk">dan@dan-price.co.uk</a>
         <a href="https://www.linkedin.com/in/itsdanprice">linkedin.com/in/itsdanprice</a>
+        <a href="https://github.com/passqlabs/questforge">github.com/passqlabs/questforge</a>
       </div>
     </div>
   </footer>
